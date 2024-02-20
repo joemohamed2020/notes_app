@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/views/widgets/custom_app_bar.dart';
+import 'package:notes_app/views/widgets/notes_view_body.dart';
 
 class NotesView extends StatelessWidget {
   const NotesView({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Scaffold(
-        body: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            children: [CustomAppBar()],
-          ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: const Icon(Icons.add),
         ),
+        body:  NotesViewBody(),
       ),
     );
   }
