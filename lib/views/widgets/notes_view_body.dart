@@ -8,35 +8,35 @@ class NotesViewBody extends StatelessWidget {
 
   final List<NoteModel> list = [
     NoteModel(
-      title: "Joe",
-      subTitle: "hello Mother Fucker",
-      date: "May 21, 2022",
-    ),
+        title: "Joe",
+        subTitle: "hello Mother Fucker",
+        date: "May 21, 2022",
+        content: "das;akd;askd;a"),
     NoteModel(
-      title: "Joe1",
-      subTitle: "hello Mother Fucker1",
-      date: "May 21, 20221",
-    ),
+        title: "Joe1",
+        subTitle: "hello Mother Fucker1",
+        date: "May 21, 20221",
+        content: "das;akd;askd;a"),
     NoteModel(
-      title: "Joe2",
-      subTitle: "hello Mother Fucker1",
-      date: "May 21, 20221",
-    ),
+        title: "Joe2",
+        subTitle: "hello Mother Fucker1",
+        date: "May 21, 20221",
+        content: "das;akd;askd;a"),
     NoteModel(
-      title: "Joe3",
-      subTitle: "hello Mother Fucker1",
-      date: "May 21, 20221",
-    ),
+        title: "Joe3",
+        subTitle: "hello Mother Fucker1",
+        date: "May 21, 20221",
+        content: "das;akd;askd;a"),
     NoteModel(
-      title: "Joe3",
-      subTitle: "hello Mother Fucker1",
-      date: "May 21, 20221",
-    ),
+        title: "Joe3",
+        subTitle: "hello Mother Fucker1",
+        date: "May 21, 20221",
+        content: "das;akd;askd;a"),
     NoteModel(
-      title: "Joe3",
-      subTitle: "hello Mother Fucker1",
-      date: "May 21, 20221",
-    )
+        title: "Joe3",
+        subTitle: "hello Mother Fucker1",
+        date: "May 21, 20221",
+        content: "das;akd;askd;a")
   ];
 
   @override
@@ -45,7 +45,10 @@ class NotesViewBody extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
-          const CustomAppBar(),
+          const CustomAppBar(
+            title: "Notes",
+            icon: Icons.search,
+          ),
           const SizedBox(height: 16),
           NoteListView(
             list: list,
