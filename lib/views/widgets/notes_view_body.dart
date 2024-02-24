@@ -11,32 +11,32 @@ class NotesViewBody extends StatelessWidget {
         title: "Joe",
         subTitle: "hello Mother Fucker",
         date: "May 21, 2022",
-        content: "das;akd;askd;a"),
+        color: 0),
     NoteModel(
         title: "Joe1",
         subTitle: "hello Mother Fucker1",
         date: "May 21, 20221",
-        content: "das;akd;askd;a"),
+        color: 0),
     NoteModel(
         title: "Joe2",
         subTitle: "hello Mother Fucker1",
         date: "May 21, 20221",
-        content: "das;akd;askd;a"),
+        color: 0),
     NoteModel(
         title: "Joe3",
         subTitle: "hello Mother Fucker1",
         date: "May 21, 20221",
-        content: "das;akd;askd;a"),
+        color: 0),
     NoteModel(
         title: "Joe3",
         subTitle: "hello Mother Fucker1",
         date: "May 21, 20221",
-        content: "das;akd;askd;a"),
+        color: 0),
     NoteModel(
         title: "Joe3",
         subTitle: "hello Mother Fucker1",
         date: "May 21, 20221",
-        content: "das;akd;askd;a")
+        color: 0)
   ];
 
   @override
