@@ -26,12 +26,7 @@ class NotesView extends StatelessWidget {
             },
             child: const Icon(Icons.add),
           ),
-          body: BlocBuilder<GetNoteCubit, GetNoteState>(
-            builder: (context, state) {
-              GetNoteCubit().getAllNotes();
-              return const NotesViewBody();
-            },
-          ),
+          body: const NotesViewBody(),
         ),
       ),
     );
