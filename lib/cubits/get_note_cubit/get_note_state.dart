@@ -5,3 +5,4 @@ abstract class GetNoteState {}
 
 final class GetNoteInitial extends GetNoteState {}
 
+final class GetNoteSuccess extends GetNoteState {}
