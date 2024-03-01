@@ -18,9 +18,9 @@ class NoteCard extends StatelessWidget {
         }));
       },
       child: Container(
-        decoration: const BoxDecoration(
-            color: Color(0xffffcd7b),
-            borderRadius: BorderRadius.all(Radius.circular(16))),
+        decoration: BoxDecoration(
+            color: Color(noteModel.color),
+            borderRadius: const BorderRadius.all(Radius.circular(16))),
         child: Padding(
           padding: const EdgeInsets.only(left: 16, top: 24, bottom: 24),
           child: Column(

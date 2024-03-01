@@ -18,24 +18,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
   final GlobalKey<FormState> formKey = GlobalKey();
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   String? title, subTitle;
-  Color color = Colors.orange;
-  late final List<Color> colors;
   bool isPicked = false;
-  @override
-  void initState() {
-    colors = [
-      Colors.orange,
-      Colors.red,
-      Colors.blue,
-      Colors.yellow,
-      Colors.green,
-      Colors.cyan,
-      Colors.brown,
-      Colors.amber,
-      Colors.indigo,
-    ];
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +61,8 @@ class _AddNoteFormState extends State<AddNoteForm> {
                       subTitle: subTitle!,
                       date:
                           "${DateTime.now().year}-${DateTime.now().month}-${DateTime.now().day}",
-                      color: color.value);
+                      color:
+                          BlocProvider.of<AddNoteCubit>(context).color!.value);
                   BlocProvider.of<AddNoteCubit>(context).addNote(noteModel);
                 } else {
                   autovalidateMode = AutovalidateMode.always;
