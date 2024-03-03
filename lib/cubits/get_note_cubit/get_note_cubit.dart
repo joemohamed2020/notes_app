@@ -14,4 +14,10 @@ class GetNoteCubit extends Cubit<GetNoteState> {
     notes = box.values.toList();
     emit(GetNoteSuccess());
   }
+
+  searchNotes(String text) {
+    getAllNotes();
+    notes = notes!.where((item) => item.title.contains(text)).toList();
+    emit(GetNoteSuccess());
+  }
 }
